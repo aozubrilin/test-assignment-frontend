@@ -1,0 +1,56 @@
+.input {
+  position: relative;
+
+  &--error {
+    .input__block {
+      border-color: #ed0041;
+    }
+    .input__error {
+      display: block;
+    }
+    .input__icon {
+      fill: gray;
+    }
+  }
+}
+
+.input__block {
+  width: 360px;
+  padding: 7px 38px 7px 10px;
+  font-size: 18px;
+  font-weight: 400;
+  color: black;
+  background-color: transparent;
+  border-radius: 15px;
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+
+  border: 1px #ced3da solid;
+  outline: none;
+
+  &:focus,
+  &:hover {
+    box-shadow: 0 1px 4px gray;
+  }
+}
+
+.input__error {
+  display: none;
+  position: absolute;
+  left: 15px;
+  top: -19px;
+  z-index: 1;
+
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;
+  color: #ed0041;
+}
+
+.input__icon {
+  position: absolute;
+  right: 12px;
+  top: 3px;
+  fill: #4285f4;
+}
